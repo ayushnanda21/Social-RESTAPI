@@ -1,0 +1,27 @@
+{
+  "name": "social-restapi",
+  "version": "1.0.0",
+  "description": "rest api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushnanda21/Social-RESTAPI.git"
+  },
+  "author": "Ayush Nanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushnanda21/Social-RESTAPI/issues"
+  },
+  "homepage": "https://github.com/ayushnanda21/Social-RESTAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "mongoose": "^6.2.4",
+    "morgan": "^1.10.0"
+  }
+}
