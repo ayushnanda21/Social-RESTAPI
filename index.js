@@ -8,6 +8,7 @@ const morgan =require("morgan");
 
 //acquiring routes
 const userRoute = require("./routes/users");
+const authRoute = require("./routes/auth");
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
@@ -27,6 +28,7 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
 app.use("/api/users", userRoute);
+app.use("/api/auth",authRoute);
 
 //server listening port
 app.listen(process.env.PORT || 5000, function(req,res){
